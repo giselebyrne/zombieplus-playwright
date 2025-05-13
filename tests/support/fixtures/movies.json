@@ -1,84 +1,60 @@
 {
-    "create": {
-      "title": "Guerra Mundial Z",
-      "overview": "Um ex-investigador da ONU percorre o mundo para encontrar uma maneira de deter uma pandemia que transforma humanos em zumbis.",
-      "company": "Paramount Pictures",
-      "release_year": 2013,
-      "featured": false,
-      "cover": "images/guerra_mundial_z.png"
-    },
-    "zumbilandia": {
-      "title": "Zumbilândia",
-      "overview": "Um grupo de sobreviventes atravessa os Estados Unidos enfrentando zumbis e criando regras para sobreviver.",
-      "company": "Sony Pictures Releasing",
-      "release_year": 2009,
-      "featured": false,
-      "cover": "images/zumbilandia.png"
-    },
-    "exterminio": {
-      "title": "Extermínio",
-      "overview": "Após um vírus devastar o Reino Unido, um homem acorda do coma e encontra Londres deserta e infestada de infectados.",
-      "company": "Fox Searchlight Pictures",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "images/exterminio.png"
-    },
-    "todo_mundo_quase_morto": {
-      "title": "Todo Mundo Quase Morto",
-      "overview": "Um homem tenta reconquistar sua namorada e salvar sua mãe durante um apocalipse zumbi em Londres.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "images/todo_mundo_quase_morto.png"
-    },
-    "invasao_zumbi": {
-      "title": "Invasão Zumbi",
-      "overview": "Passageiros de um trem-bala lutam para sobreviver quando uma epidemia zumbi se espalha pela Coreia do Sul.",
-      "company": "Next Entertainment World",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "images/invasao_zumbi.png"
-    },
-    "a_noite_dos_mortos_vivos": {
-      "title": "A Noite dos Mortos-Vivos",
-      "overview": "Um grupo de pessoas se refugia em uma casa para escapar de mortos que voltaram à vida e atacam os vivos.",
-      "company": "Continental Distributing",
-      "release_year": 1968,
-      "featured": false,
-      "cover": "images/a_noite_dos_mortos_vivos.png"
-    },
-    "eu_sou_a_lenda": {
-      "title": "Eu Sou a Lenda",
-      "overview": "Um cientista imune a um vírus mortal busca uma cura enquanto enfrenta criaturas mutantes em uma Nova York desolada.",
-      "company": "Warner Bros. Pictures",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "images/eu_sou_a_lenda.png"
-    },
-    "rec": {
-      "title": "REC",
-      "overview": "Uma repórter e seu cinegrafista ficam presos em um prédio em quarentena onde uma infecção transforma moradores em zumbis.",
-      "company": "Filmax",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "images/rec.png"
-    },
-    "army_of_the_dead": {
-      "title": "Army of the Dead: Invasão em Las Vegas",
-      "overview": "Um grupo de mercenários planeja um assalto em Las Vegas durante um surto zumbi que isolou a cidade.",
-      "company": "Netflix",
-      "release_year": 2021,
-      "featured": false,
-      "cover": "images/army_of_the_dead.png"
-    },
-    "the_crazies": {
-      "title": "The Crazies",
-      "overview": "Após um acidente aéreo, uma arma biológica contamina uma cidade, transformando os habitantes em assassinos enlouquecidos.",
-      "company": "Overture Films",
-      "release_year": 2010,
-      "featured": false,
-      "cover": "images/the_crazies.png"
-    }
+  "create": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador da ONU percorre o mundo para encontrar uma maneira de deter uma pandemia que transforma humanos em zumbis.",
+    "company": "Paramount Pictures",
+    "release_year": 2013,
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
+  },
+  "duplicate": {
+    "title": "Extermínio",
+    "overview": "Após um vírus devastar o Reino Unido, um homem acorda do coma e encontra Londres deserta e infestada de infectados.",
+    "company": "Fox Entertainment",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/exterminio.jpg"
+  },
+    "to_remove": {
+    "title": "A Noite dos Mortos-Vivos",
+    "overview": "Um grupo de pessoas se refugia em uma casa para escapar de mortos que voltaram à vida e atacam os vivos.",
+    "company": "Universal Pictures",
+    "release_year": 1970,
+    "featured": false,
+    "cover": "/covers/movies/mortos-vivos.jpg"
+  },
+  "search": {
+    "input": "zumbi",
+    "outputs": [
+      "Zumbilândia",
+      "Orgulho e Preconceito e Zumbis",
+      "Meu namorado é um Zumbi"
+    ],
+    "data": [
+      {
+        "title": "Zumbilândia",
+        "overview": "Um grupo de sobreviventes atravessa os Estados Unidos enfrentando zumbis e criando regras para sobreviver.",
+        "company": "Sony Pictures",
+        "release_year": 2009,
+        "featured": false,
+        "cover": "/covers/movies/zumbilandia.jpg"
+      },
+      {
+        "title": "Orgulho e Preconceito e Zumbis",
+        "overview": "Na Inglaterra do século 19, uma praga misteriosa torna o país em um campo de guerra. Ninguém está a salvo uma vez que os mortos voltam para aterrorizar os vivos. A situação faz com que Elizabeth Bennet, una-se ao Sr. Darcy.",
+        "company": "Universal Pictures",
+        "release_year": 2016,
+        "featured": false,
+        "cover": "/covers/movies/ozp.jpg"
+      },
+      {
+        "title": "Meu namorado é um Zumbi",
+        "overview": "Em um mundo pós-apocalíptico, um zumbi romântico se apaixona por uma humana, e o envolvimento deles cria uma reação em cadeia. Ele quer provar que os zumbis podem mudar.",
+        "company": "Fox Entertainment",
+        "release_year": 2013,
+        "featured": false,
+        "cover": "/covers/movies/mnzumbie.png"
+      }
+    ]
   }
-  
-  
+}

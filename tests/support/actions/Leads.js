@@ -1,8 +1,8 @@
 
-import { expect } from '@playwright/test';
+const { expect } = require('@playwright/test');
 
 // Classe que contem os testes cases da Página Principal da aplicação
-export class LandingPage {
+export class Leads {
 
     constructor(page){
         this.page = page
