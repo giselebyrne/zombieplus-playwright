@@ -4,7 +4,11 @@
 // O beforeAll roda uma única vez para todos os test
 const { test, expect } = require('../support')
 const { faker } = require('@faker-js/faker')
+const { executeSQL } = require('../support/database')
 
+test.beforeAll(async () => {
+    await executeSQL('Delete from leads')
+})
 
 test('Deve cadastrar um Lead na fila de espera', async ({ page }) => {
   const leadName = faker.person.fullName()

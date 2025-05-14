@@ -38,7 +38,6 @@ export class Movies {
             await this.page.locator('.featured .react-switch').click()
         }
 
-
         await this.submit()
     }
 
