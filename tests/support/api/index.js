@@ -21,9 +21,22 @@ export class Api {
         this.token = 'Bearer ' + body.token
     }
 
+     async getCompanyIdByName(companyName) {
+        const response = await this.request.get(this.baseApi + '/companies', {
+            headers: {
+                Authorization: this.token,
+            },
+            params: {
+                name: companyName
+            }
+        })
+        expect(response.ok()).toBeTruthy()
+        const body = JSON.parse(await response.text())
+        return body.data[0].id
+    }
+
     async postMovie(movie) {
         const companyId = await this.getCompanyIdByName(movie.company)
-
         const response = await this.request.post(this.baseApi + '/movies', {
             headers: {
                 Authorization: this.token,
@@ -41,17 +54,25 @@ export class Api {
         expect(response.ok()).toBeTruthy()
     }
 
-    async getCompanyIdByName(companyName) {
-        const response = await this.request.get(this.baseApi + '/companies', {
+    //TVShows     
+    async postTvShow(tvshow) {
+        const companyId = await this.getCompanyIdByName(tvshow.company)
+
+        const response = await this.request.post(this.baseApi + '/tvshows', {
             headers: {
                 Authorization: this.token,
+                ContentType: 'application/json; charset=utf-8',
+                Accept: 'application/json, text/plain, */*'
             },
-            params: {
-                name: companyName
+            multipart: {
+                title: tvshow.title,
+                overview: tvshow.overview,
+                company_id: companyId,
+                release_year: tvshow.release_year,
+                seasons: tvshow.seasons,
+                featured: tvshow.featured
             }
         })
         expect(response.ok()).toBeTruthy()
-        const body = JSON.parse(await response.text())
-        return body.data[0].id
-    }
+    }   
 }
